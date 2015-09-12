@@ -1,0 +1,35 @@
+body {
+    width: 360px;
+}
+
+header {
+    background-color: #acd373;
+    background-height: 40px;
+}
+
+nav {
+    top: 8px;
+    left: 30px;
+}
+    
+.greeting {
+    background: #9abd67 url(images/header_silhouette_bkg.png) no-repeat bottom;
+    height: 350px;
+}
+
+.greeting h1 {
+    color: #f7f7f7;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;  
+}
+
+.greeting span {
+    color:#f7f7f7;
+    font-family: DroidSerif;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+
+}
