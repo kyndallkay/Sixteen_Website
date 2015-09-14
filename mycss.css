@@ -5,11 +5,18 @@ body {
 header {
     background-color: #acd373;
     background-height: 40px;
+    padding-left: 30px;
+    padding-top: 8px;
 }
 
 nav {
-    top: 8px;
-    left: 30px;
+    width: 40px;
+    height: 40px;
+    background-color:#89a85c;
+}
+
+nav a {
+    padding: 15px;
 }
     
 .greeting {
@@ -22,7 +29,8 @@ nav {
     font-family: 'Source Sans Pro';
     font-size: 20px;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;
+    font-weight: 400;
 }
 
 .greeting span {
@@ -31,5 +39,52 @@ nav {
     font-size: 13px;
     font-style: italic;
     text-align: center;
+}
 
+.whoweare h2 {    
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #454545;
+    font-weight: 400;
+}
+
+.whoweare p {
+    color: #454545;
+    font-family: 'Source Sans Pro';
+    font-size: 13px;
+}
+
+.whoweare a {
+    color:#acd473;
+    font-family: DroidSerif;
+    font-size: 11px;
+    font-style: italic;
+    border-color: #acd373; 
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 15px;
+    padding-top: 11px;
+    padding-right: 15px;
+    padding-bottom: 11px;
+    text-decoration: none;
+}
+
+
+.services h2 {
+    color:#454545;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.services span {
+    color:#acd373;
+}
+
+.services > p {
+    font-family: DroidSerif;
+    font-size: 12px;
+    color: #454545;
 }
