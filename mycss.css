@@ -1,5 +1,18 @@
 body {
     width: 360px;
+    background-color: #f7f7f7;
+    margin: 0px;
+}
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
 }
 
 header {
@@ -28,7 +41,6 @@ nav a {
     color: #f7f7f7;
     font-family: 'Source Sans Pro';
     font-size: 20px;
-    text-transform: uppercase;
     text-align: center;
     font-weight: 400;
 }
@@ -39,23 +51,25 @@ nav a {
     font-size: 13px;
     font-style: italic;
     text-align: center;
+    display: block;
 }
 
-.whoweare h2 {    
+.who-we-are h2 {    
     font-family: 'Source Sans Pro';
     font-size: 18px;
-    text-transform: uppercase;
     color: #454545;
     font-weight: 400;
+    background: url(images/whoweare_dudeicon.png) no-repeat;
+    padding-left: 67px;
 }
 
-.whoweare p {
+.who-we-are p {
     color: #454545;
     font-family: 'Source Sans Pro';
     font-size: 13px;
 }
 
-.whoweare a {
+.who-we-are a {
     color:#acd473;
     font-family: DroidSerif;
     font-size: 11px;
@@ -76,7 +90,6 @@ nav a {
     font-family: 'Source Sans Pro';
     font-weight: 400;
     font-size: 18px;
-    text-transform: uppercase;
 }
 
 .services span {
