@@ -19,6 +19,16 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
+h2 {
+    color:#454545;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 33px;
+}
+
 /*//////////////////////////////////
 
 header section
@@ -85,6 +95,11 @@ greeting section
     display: block;
 }
 
+#scrollarrow-vertical {
+    display: block;
+    margin: 0 auto;
+}
+
 /*//////////////////////////////////
 
 who we are section
@@ -116,7 +131,7 @@ who we are section
     width: 298px;
 }
 
-.who-we-are a {
+.learn-more-link {
     color:#acd473;
     font-family: DroidSerif;
     font-size: 11px;
@@ -128,6 +143,7 @@ who we are section
     padding: 11px 15px;
     display: inline-block;
     margin: 17px 0px;
+    width: 95px;
 }
 
 /*//////////////////////////////////
@@ -181,10 +197,11 @@ services section
 
 .services li{
     list-style: none;
+    display: block;
 }
 
 .services-icon {
-    display: inline;
+    display: inline-block;
     float: left;
     margin-right: 24px;
 }
@@ -206,4 +223,104 @@ services section
     margin-top: 8px;
     margin-left: 60px;
     margin-right: 45px;
+}
+
+.services .learn-more-link {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 47px;
+}
+
+/*//////////////////////////////////
+
+team section
+
+//////////////////////////////////*/
+
+.team {
+    background-color: #acd373;
+    height: 485px;
+}
+
+.team h2 {
+    color:#f7f7f7;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.team .quote {
+    color:#f7f7f7;
+}
+
+.team-member {
+    width:200px;
+    height: 182px;
+    background-color: #f7f7f7;
+    margin-top: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member h3 {
+    font-family: 'Source Sans Pro';
+    font-size:14px;
+    color:#acd373;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-member span {
+    font: italic 12px DroidSerif;
+    color:#787878;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.team-member .social-links {
+    background-color: #ebebeb;
+    width:200px;
+    height: 52px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+    line-height: 52px;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+
+/*//////////////////////////////////
+
+testimonials section
+
+//////////////////////////////////*/
+
+.work-sample {
+    margin-top: 52px;
+    background-color: #ebebeb;
+}
+
+.work-sample h3 {
+    font-family: 'Source Sans Pro';
+    color: #454545;
+    
+}
+
+
+/*//////////////////////////////////
+
+testimonials section
+
+//////////////////////////////////*/
+
+.testimonials {
+    background: url(images/testimonial_bkg.jpg) no-repeat;
+    height: 562px;
 }
