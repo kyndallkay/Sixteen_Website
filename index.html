@@ -50,21 +50,21 @@
         </div>
         
         <ul>
-            <li><img class="services-icon" src="images/services_designicon.png">
+            <li class="service-item">
             <div class="services-text">
                 <h3>Graphic Design</h3>
                 <p>Eius quae. Eveniet veniam repeledus eos, vitae repudadae deleniti dol rum</p>
             </div>
             </li>
             
-            <li><img class="services-icon" src="images/services_mobileicon.png">
+            <li class="service-item">
             <div class="services-text">
                 <h3>Mobile App Development</h3>
                 <p>Repellendus consequatur perfedis vitae neque eum similique possimus facilis</p>
             </div> 
             </li>
             
-            <li><img class="services-icon" src="images/services_webdesignicon.png">
+            <li class="service-item">
             <div class="services-text">
                 <h3>Web Design & Development</h3>
                 <p>inventore nesciunt velit voluptas ac santium harum temporibus</p>
@@ -97,7 +97,7 @@
         </div>
         <div class="team-footer">
             <p>Are you the next? Let's join us</p>
-            <a href="#">We Are Hiring!</a>
+            <a class="learn-more-link" href="#">We Are Hiring!</a>
         </div>
         
     </section>
@@ -128,8 +128,8 @@
            <img src="images/testimonials_quotationmarks.png">
         </div>
         <img src="images/testimonials_quoteboxtriangle.png" alt="">
-        <img src="images/client_johndoe.jpg">
         <div class="client-byline">
+            <img src="images/client_johndoe.jpg">
             <h3>John Doe</h3>
             <span>smashingmagazine.com</span>
         </div>
@@ -197,11 +197,15 @@
         </div>
         <h2>Contact</h2>
         <hr>
-        <div class="form">
-            <p>Name</p>
-            <p>E-mail</p>
-            <p>Message</p>
-        </div>
+        <form action="">
+            <label for="name-input">Name</label>
+            <input id="name-input" type="text">
+            <label for="email-input">E-mail</label>
+            <input id="email-input" type="text">
+            <label for="message-input">Message</label>
+            <input id="message-input" type="text">
+            <input type="submit">
+        </form>
     </section>
     
 <!--footer section----------------------------------------->
