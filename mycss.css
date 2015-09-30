@@ -194,19 +194,22 @@ services section
     font-style: normal;
 }
 
-.service-item{
+.service-item {
     list-style: none;
-    display: block;
-    padding-left: 55px;
-    min-height: 80px;
 }
 
-.services-icon {
+.service-img {
     display: inline-block;
-    float: left;
+    vertical-align: top;
+    width: 50px;
 }
 
-.services h3 {
+.service-info {
+    min-height: 80px;
+    display: inline-block;
+}
+
+.service-info h3 {
     font-family: 'Source Sans Pro';
     font-size:14px;
     color:#acd373;
@@ -214,7 +217,7 @@ services section
     margin-bottom: 0px;
 }
 
-.services p {
+.service-info p {
     font-family: DroidSerif;
     font-size: 12px;
     color: #454545;
@@ -329,6 +332,7 @@ testimonials section
 
 .testimonials {
     background: url(images/testimonial_bkg.jpg) no-repeat;
+    color:#f7f7f7;
 }
 
 .testimonials .learn-more-link {
@@ -336,18 +340,18 @@ testimonials section
 }
 
 .testimonials h2 {
-    color:#f7f7f7
+    color:#f7f7f7;
+    font-weight: 200;
 }
 
 .testimonials p {
-    color: #f7f7f7;
     font-family: 'Source Sans Pro';
     font-size: 13px;
     font-weight: 100;
 }
 
 .quote-box {
-    border: #f7f7f7 1px solid;
+    border: 1px solid;
     margin-top: 30px
 }
 
@@ -356,21 +360,32 @@ testimonials section
     margin-right: 10px;
 }
 
-.quote-box img {
+.quote-box {
+    background: url(images/testimonials_quotationmarks.png) no-repeat;
+    padding: 5px 5px 8px;
+    background-position: 254px 60px;
 }
 
-.client-byline img {
+.quote-box {
+    margin: 0;
+}
+
+.testimonial-company img, .company-details {    display: inline-block;
+
+}
+.testimonial-company img {
     border-radius: 50%;
 }
 
-.client-byline h3 {
+.company-details h3 {
     font-family: 'Source Sans Pro';
     font-size:14px;
     color:#acd373;
     font-weight: 600;
 }
 
-.client-byline span {
+.company-details a {
+    text-decoration: none;
     font: italic 12px DroidSerif;
     color:rgba(247, 247, 247, 0.85);
 }

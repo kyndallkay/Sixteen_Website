@@ -11,7 +11,7 @@
 
    <header>
         <a href="index.html" class="logo">
-            <img src="images/nav_sixteen_logo.png" alt="Sixteen Logo"></a>
+            <img src="images/nav_sixteen_logo.png" alt="Sixteen Logo">           </a>
         <nav>
         </nav>
     </header>  
@@ -19,9 +19,10 @@
 <!--greeting section-------------------------------------->
    
     <section class="greeting">
-       <div><h1>We are Sixteen Digital Agency</h1>
-        <span>Based on  Jakarta, Indonesia</span>
-        <a href="#" id="scrollarrow-vertical"> <img src="images/greeting_scrollarrow.png"></a>
+       <div>
+           <h1>We are Sixteen Digital Agency</h1>
+            <span>Based on  Jakarta, Indonesia</span>
+            <a href="#" id="scrollarrow-vertical"> <img src="images/greeting_scrollarrow.png"></a>
         </div> 
     </section>
     
@@ -51,11 +52,15 @@
         
         <ul>
             <li class="service-item">
-            <div class="services-text">
-                <h3>Graphic Design</h3>
-                <p>Eius quae. Eveniet veniam repeledus eos, vitae repudadae deleniti dol rum</p>
-            </div>
+                <div class="service-img">
+                     <img src="images/services_designicon.png" alt="">
+                </div>
+                <div class="service-info">
+                    <h3>Graphic Design</h3>
+                    <p>Eius quae. Eveniet veniam repeledus eos, vitae repudadae deleniti dol rum</p>
+                </div>
             </li>
+            
             
             <li class="service-item">
             <div class="services-text">
@@ -66,7 +71,7 @@
             
             <li class="service-item">
             <div class="services-text">
-                <h3>Web Design & Development</h3>
+                <h3>Web Design &amp; Development</h3>
                 <p>inventore nesciunt velit voluptas ac santium harum temporibus</p>
             </div>
             </li>
@@ -122,24 +127,34 @@
 
 <!--testimonial section--------------------------------------->
 
-    <section class="testimonials">
+<section class="testimonials">
+   
+    <div class="testimonial-control">
+       
         <div class="quote-box">
-           <p>Quisquam eveniet quod incidunt ex, autem, ipsam est quam illo et! Nulla laborum exercitationem illum</p> 
-           <img src="images/testimonials_quotationmarks.png">
+            <p>Quisquam eveniet quod incidunt ex, autem, ipsam est quam illo et! Nulla laborum exercitationem illum</p> 
         </div>
+
         <img src="images/testimonials_quoteboxtriangle.png" alt="">
-        <div class="client-byline">
-            <img src="images/client_johndoe.jpg">
-            <h3>John Doe</h3>
-            <span>smashingmagazine.com</span>
-        </div>
-        <img src="images/testimonials_scrollcircles.png" alt="">
+
+            <div class="testimonial-company">
+                <img src="images/client_johndoe.jpg">
+            </div>
+                <div class="company-details">
+                    <h3>John Doe</h3>
+                    <a href="#">smashingmagazine.com</a>
+                </div>
+                    <div class="control">
+                        <img src="images/testimonials_scrollcircles.png" alt="">
+                    </div>
+    </div>
         <div class="give-testimonials">
             <h2>Testimonials</h2>
             <p>Optio corporis fuga mollitia sit magni ut quasi consequuntur aut iste aspernatur totam similiue sint. Harum voluptas vero iste. itaque et in sit eveniet acusamus quibusdam cupiditate</p>
         </div>
         <a class="learn-more-link" href="#">Give Testimonials</a>
-    </section>
+    
+</section>
             
 <!--blog section----------------------------------------->
 
@@ -147,6 +162,7 @@
         <h2>Blog</h2>
         <span class="quote">&#8220; Asperiores ea commodi eius a quo omnis esse &#8221;</span>
         <hr>
+ 
         <ul>
             <li>
                 <img src="images/blog_webdesign_img.jpg">
@@ -156,6 +172,7 @@
                     <a href="#">Read More</a>
                 </div>
             </li>
+            
             <li>
                 <img src="images/blog_app_img.jpg">
                 <div class="blog-posts">
@@ -164,6 +181,7 @@
                     <a href="#">Read More</a>
                 </div>
             </li>
+            
             <li>
                 <img src="images/blog_UIUX_img.jpg">
                 <div class="blog-posts">
@@ -172,6 +190,7 @@
                     <a href="#">Read More</a>
                 </div>
             </li>
+            
             <li>
                 <img src="images/blog_quicktips_img.jpg">
                 <div class="blog-posts">
@@ -180,7 +199,9 @@
                     <a href="#">Read More</a>
                 </div>
             </li>
+            
         </ul>
+        
         <div class="newsletter-signup">
             <p>Joing Our Newsletter for article Update</p>
             <input type="email">
@@ -202,15 +223,16 @@
             <input id="name-input" type="text">
             <label for="email-input">E-mail</label>
             <input id="email-input" type="text">
-            <label for="message-input">Message</label>
-            <input id="message-input" type="text">
+            
+            <label for="text-area">Message</label>
+            <textarea name="message"></textarea>
             <input type="submit">
         </form>
     </section>
     
 <!--footer section----------------------------------------->
 
-    <section class="footer">
+    <footer>
         <div class="social-icons">
             <img src="images/footer_socialicon_facebook.png" alt="">
             <img src="images/footer_socialmedia_twitter.png" alt="">
@@ -220,8 +242,8 @@
             <img src="images/footer_socialmedia_something.png" alt="">
             <img src="images/footer_socialmedia_instagram.png" alt="">
             <img src="images/footer_socialmedia_linkedin.png" alt="">
-            <p>© Copyright 2014. All rights reserved.</p>
+            <p>&copy; Copyright 2014. All rights reserved.</p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
