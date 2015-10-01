@@ -159,7 +159,7 @@
                 
         <div class="company-details">
             <h3>John Doe</h3>
-            <a href="#">smashingmagazine.com</a>
+            <a href="http://www.smashingmagazine.com">smashingmagazine.com</a>
         </div>
                     
         <div class="control">
@@ -223,10 +223,10 @@
         </ul>
         
         <div class="newsletter-signup">
-            <p>Joing Our Newsletter for article Update</p>
+            <span>Join Our Newsletter for article Update</span>
             <form class="newsletter-form">
                 <input type="email">
-                <img src="images/contactus_envelopeicon.png">
+                <input type="submit">
             </form>
         </div>
     </section>
@@ -234,22 +234,19 @@
 <!--contact section----------------------------------------->
    
     <section class="contact">
-        <div class="map">
-            <img src="images/map_bkgimg_overlay.jpg">
-            <a href="#">See Map Details</a>
-        </div>
+        <img class="map" src="images/map_bkgimg_overlay.jpg">
         <h2>Contact</h2>
-        <hr>
-        <form action="">
+        <img class="divider" src="images/divider_white.png">        
+        <form class="contact-form">
            
             <label for="name-input">Name</label>
-            <input id="name-input" type="text">
+            <input id="name-input" type="text" name="name-input">
             
             <label for="email-input">E-mail</label>
-            <input id="email-input" type="text">
+            <input id="email-input" type="text" name="email-input" placeholder="writeme@me.com">
             
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <label>Message</label>
+            <textarea name="message"></textarea>
             
             <input type="submit">
         </form>
@@ -258,17 +255,15 @@
 <!--footer section----------------------------------------->
 
     <footer class="page-footer">
-        <div class="social-links">
             <a href="http://www.facebook.com" target="_blank"><img src="images/footer_socialicon_facebook.png" alt="Facebook icon"></a>
-            <img src="images/footer_socialmedia_twitter.png" alt="">
-            <img src="images/footer_socialmedia_youtube.png" alt="">    
-            <img src="images/footer_socialmedia_dribbble.png" alt="">
-            <img src="images/footer_socialmedia_behance.png" alt="">
-            <img src="images/footer_socialmedia_something.png" alt="Deviant Art icon">
-            <img src="images/footer_socialmedia_instagram.png" alt="">
-            <img src="images/footer_socialmedia_linkedin.png" alt="">
+            <a href="http://www.twitter.com" target="_blank"><img src="images/footer_socialmedia_twitter.png" alt="Twitter icon"></a>
+            <a href="http://www.youtube.com" target="_blank"><img src="images/footer_socialmedia_youtube.png" alt="You Tube icon"> </a>   
+            <a href="http://www.dribbble.com" target="_blank"><img src="images/footer_socialmedia_dribbble.png" alt="Dribbble icon"></a>
+            <a href="http://www.behance.com" target="_blank"><img src="images/footer_socialmedia_behance.png" alt="Behance icon"></a>
+            <a href="http://www.deviantart.com" target="_blank"><img src="images/footer_socialmedia_something.png" alt="Deviant Art icon"></a>
+            <a href="http://www.intagram.com" target="_blank"><img src="images/footer_socialmedia_instagram.png" alt="Instagram icon"></a>
+            <a href="http://www.linkedin.com" target="_blank"><img src="images/footer_socialmedia_linkedin.png" alt="Linked In icon"></a>
             <p class="copyright">&copy; Copyright 2014. All rights reserved.</p>
-        </div>
     </footer>
 </body>
 </html>

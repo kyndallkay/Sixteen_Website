@@ -1,8 +1,20 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}
+
+
+/*//////////////////////////////////
+
+base styling
+
+//////////////////////////////////*/
+
+
 body {
-    width: 360px;
     background-color: #f7f7f7;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    width: 360px;
 }
 
 section{
@@ -65,7 +77,8 @@ greeting section
 //////////////////////////////////*/
 
 .greeting {
-    background: #9abd67 url(images/header_silhouette_bkg.png) no-repeat bottom;
+    background: #9abd67 url(images/silhouette_bg_fullwidth.png) no-repeat bottom;
+    background-size: auto 85px;
     height: 350px;
     position: relative;
     color: #f7f7f7;
@@ -326,7 +339,7 @@ team section
     padding: 10px;
 }
 
-/*team aelector*/
+/*team selector*/
 
 .team-selector {
     position: relative;
@@ -404,12 +417,10 @@ works section
     padding: 30px;
 }
 
-#envato-logo {
-    left: 0px;
-}
-
-#themeforest-logo {
-    right: 0px;
+.works-footer img {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
 }
 
 
@@ -458,23 +469,34 @@ testimonials section
     margin: 0;
 }
 
-.testimonial-company img, .company-details {    display: inline-block;
+.testimonial-company img, .company-details {       display: inline-block;
+    vertical-align: middle;
 
 }
 .testimonial-company img {
     border-radius: 50%;
 }
 
+.company-details {
+    width: 190px;
+    margin-left: 22px;
+}
+
 .company-details h3 {
     font-size:14px;
     color:#acd373;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .company-details a {
     text-decoration: none;
     font: italic 12px DroidSerif;
     color:rgba(247, 247, 247, 0.85);
+}
+
+.control {
+    text-align: center;
 }
 
 /*//////////////////////////////////
@@ -505,7 +527,7 @@ blog section
     width: 160px;
     display: inline-block;
     vertical-align: top;
-    margin: 0 0 10px 12px;
+    margin: 0 0 16px 12px;
     position: relative;
 }
 
@@ -526,21 +548,34 @@ blog section
 }
 
 .blog-title {
-    
+    background: #ebebeb;
+    position: relative;
+    height: 70px;
 }
 
 .blog-post h4 {
     font-size: 11px;
     color: #454545;
-    weight: 100;
+    weight: 600;
     text-align: center;
-    background-color:#ebebeb;
     margin: 0;
     padding: 8px;
     width: 100%;
-    position: absolute;
     top: 50%;
     transform: translateY(50%);
+}
+
+.blog-post a {
+  display: block;
+  background: #acd373;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-size: 9px
 }
 
 .type-mobile .blog-type {
@@ -559,4 +594,139 @@ blog section
    background-image: url(images/blog_webdesign_globeicon.png)   
 }
 
+/* blog - newsletter sign up */
 
+.newsletter-signup {
+  background: #9abd67;
+  padding: 30px 10px;
+  color: white;
+  font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.newsletter-form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.newsletter-form input{
+  -webkit-appearance:none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  height: 25px;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 8px;
+  width: 110px;
+}
+
+.newsletter-form input[type="submit"]{
+  text-indent: -99999px;
+  width: 30px;
+  background: white url(images/contactus_envelopeicon.png) no-repeat center;
+}
+
+/*//////////////////////////////////
+
+contact form section
+
+//////////////////////////////////*/
+
+
+.map {
+  margin: -30px -30px 0;
+}
+
+.contact {
+    background-color: #acd373;
+}
+
+.contact h2 {
+    text-align: center;
+    color:#f7f7f7;
+}
+
+.contact .divider {
+    margin-bottom: 36px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea{
+  display: block;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder{
+    color: white;
+    font-family:DroidSerif;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  height: 28px;
+  -webkit-appearance:none;
+  border: 1px solid transparent;
+  background-color: #9abd67;
+  padding: 5px;
+}
+.contact-form label{
+  font-size: 14px;
+  margin: 15px 0 10px 0;
+}
+.contact-form input[type="submit"]{
+  height: 32px;
+  margin: 26px auto;
+  width: 73%;
+  color: #f7f7f7;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.contact-form textarea{
+  height: 85px;
+  resize: none;
+}
+
+.contact label {
+    color: #f7f7f7;
+}
+
+/*//////////////////////////////////
+
+contact form section
+
+//////////////////////////////////*/
+
+.page-footer {
+  background: #9abd67;
+  color: #fff;
+  text-align: center;
+  padding: 20px
+}
+
+.copyright {
+    color: #f7f7f7;
+    font-size: 13px;
+    weight: 100;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width : 1000px){
+    .greeting {
+/*    background-size: auto 216px;*/
+    height: 725px;
+    }
+    
+    .iphone {
+    float: right;
+    }
+}
