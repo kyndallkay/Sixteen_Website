@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Sixteen Digital Agency</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="mycss.css">
 </head>
+
 <body>
 
  <!--navigation section-------------------------------------->
@@ -16,13 +18,13 @@
         </nav>
     </header>  
        
-<!--greeting section-------------------------------------->
+<!--greeting section----------------------------------------->
    
     <section class="greeting">
        <div>
            <h1>We are Sixteen Digital Agency</h1>
             <span>Based on  Jakarta, Indonesia</span>
-            <a href="#" id="scrollarrow-vertical"> <img src="images/greeting_scrollarrow.png"></a>
+            <img id="scrollarrow-vertical" src="images/greeting_scrollarrow.png">
         </div> 
     </section>
     
@@ -63,17 +65,23 @@
             
             
             <li class="service-item">
-            <div class="services-text">
-                <h3>Mobile App Development</h3>
-                <p>Repellendus consequatur perfedis vitae neque eum similique possimus facilis</p>
-            </div> 
+                <div class="service-img">
+                    <img src="images/services_mobileicon.png" alt="">
+                </div>
+                <div class="service-info">
+                    <h3>Mobile App Development</h3>
+                    <p>Repellendus consequatur perfedis vitae neque eum similique possimus facilis</p>
+                </div> 
             </li>
             
             <li class="service-item">
-            <div class="services-text">
-                <h3>Web Design &amp; Development</h3>
-                <p>inventore nesciunt velit voluptas ac santium harum temporibus</p>
-            </div>
+                <div class="service-img">
+                   <img src="images/services_webdesignicon.png" alt="">
+                </div>
+                <div class="service-info">
+                    <h3>Web Design &amp; Development</h3>
+                    <p>inventore nesciunt velit voluptas ac santium harum temporibus</p>
+                </div>
             </li>
         </ul>
         <a class="learn-more-link" href="#">Learn More</a>
@@ -82,22 +90,25 @@
 <!--team section----------------------------------------->
 
     <section class="team">
-        <div><h2>Meet Our Amazing Team</h2>
-            <span class="quote">"Asperiores ea commodi eius a quo omnis esse"</span>
-            <img class="divider" src="images/divider_white.png">
+        <div class="team-header">
+           <h2>Meet Our Amazing Team</h2>
+           <span class="quote">"Asperiores ea commodi eius a quo omnis esse"</span>
+           <img class="divider" src="images/divider_white.png">
         </div>
-        <img class="left-right-arrows" img src="images/team_arrowleft.png">
-        <img class="left-right-arrows" img src="images/team_arrowright.png">
-        <div class="team-member">
-            <img class="round-pic" src="images/team_johndoe.jpg">
-            <div class="team-name">
-                <h3>John Doe</h3>
-                <span>CEO & Founder</span>
-            </div>
-            <div class="social-links">
-                <img src="images/team_social_fb.png">
-                <img src="images/team_social_twitter.png">
-                <img src="images/team_social_fb.png">
+        <div class="team-selector">
+            <img class="team-arrows left-arrow" img src="images/team_arrowleft.png">
+            <img class="team-arrows right-arrow" img src="images/team_arrowright.png">
+            <div class="team-member">
+                <img class="round-pic" src="images/team_johndoe.jpg">
+                <div class="team-name">
+                    <h3>John Doe</h3>
+                    <span>CEO &amp; Founder</span>
+                </div>
+                <div class="social-links">
+                    <img src="images/team_social_fb.png">
+                    <img src="images/team_social_twitter.png">
+                    <img src="images/team_social_fb.png">
+                </div>
             </div>
         </div>
         <div class="team-footer">
@@ -110,18 +121,23 @@
 <!--works section----------------------------------------->
 
     <section class="works">
-        <h2>Our Recent Works</h2>
-        <span class="quote">&#8220; Asperiores ea commodi eius a quo omnis esse &#8221;</span>
-        <hr>
+       <div class="works-header">
+            <h2>Our Recent <em>Works</em></h2>
+            <span class="quote">&#8220;Asperiores ea commodi eius a quo omnis esse&#8221;</span>
+            <img class="divider" src="images/divider_dark.png">
+        </div>
+        
         <div class="work-sample">
             <img src="images/work_webscreenshot.jpg">
             <h3>Letoy Themes</h3>
-            <span>Web Design & Development</span>
+            <span>Web Design &amp; Development</span>
         </div>
+        
         <a class="learn-more-link" href="#">View All Works</a>
+        
         <div class="works-footer">
-            <img src="images/client_envatostudio.png">
-            <img src="images/client_themeforest.png">
+            <img src="images/client_envatostudio.png" id="envato-logo">
+            <img src="images/client_themeforest.png" id="themeforest-logo">
         </div>
     </section>
 
@@ -137,21 +153,25 @@
 
         <img src="images/testimonials_quoteboxtriangle.png" alt="">
 
-            <div class="testimonial-company">
-                <img src="images/client_johndoe.jpg">
-            </div>
-                <div class="company-details">
-                    <h3>John Doe</h3>
-                    <a href="#">smashingmagazine.com</a>
-                </div>
-                    <div class="control">
-                        <img src="images/testimonials_scrollcircles.png" alt="">
-                    </div>
+        <div class="testimonial-company">
+            <img src="images/client_johndoe.jpg">
+        </div>
+                
+        <div class="company-details">
+            <h3>John Doe</h3>
+            <a href="#">smashingmagazine.com</a>
+        </div>
+                    
+        <div class="control">
+            <img src="images/testimonials_scrollcircles.png" alt="">
+        </div>
     </div>
+       
         <div class="give-testimonials">
             <h2>Testimonials</h2>
             <p>Optio corporis fuga mollitia sit magni ut quasi consequuntur aut iste aspernatur totam similiue sint. Harum voluptas vero iste. itaque et in sit eveniet acusamus quibusdam cupiditate</p>
         </div>
+        
         <a class="learn-more-link" href="#">Give Testimonials</a>
     
 </section>
@@ -160,52 +180,54 @@
 
     <section class="blog">
         <h2>Blog</h2>
-        <span class="quote">&#8220; Asperiores ea commodi eius a quo omnis esse &#8221;</span>
-        <hr>
+        <span class="quote">&#8220;Asperiores ea commodi eius a quo omnis esse&#8221;</span>
+        <img class="divider" src="images/divider_dark.png">
  
         <ul>
-            <li>
-                <img src="images/blog_webdesign_img.jpg">
-                <div class="blog-posts">
-                    <a href="#" class="blog-icon"> <img src="images/blog_webdesign_globeicon.png"></a>
+            <li class="blog-post type-globe">
+                <img class="blog-thumb" src="images/blog_webdesign_img.jpg">
+                <span class="blog-type"></span>
+                <div class="blog-title">
                     <h4>Web Design Fundamentals</h4>
-                    <a href="#">Read More</a>
                 </div>
+                <a href="#">Read More</a>
             </li>
             
-            <li>
-                <img src="images/blog_app_img.jpg">
-                <div class="blog-posts">
-                    <a href="#" class="blog-icon"> <img src="images/blog_app_mobileicon.png"></a>
+            <li class="blog-post type-mobile">
+                <img class="blog-thumb" src="images/blog_app_img.jpg">
+                <span class="blog-type"></span>
+                <div class="blog-title">
                     <h4>Native Apps VS Web Apps, What is the better choice?</h4>
-                    <a href="#">Read More</a>
                 </div>
+                <a href="#">Read More</a>
             </li>
             
-            <li>
-                <img src="images/blog_UIUX_img.jpg">
-                <div class="blog-posts">
-                    <a href="#" class="blog-icon"> <img src="images/blog_app_mobileicon.png"></a>
-                    <h4>Not UI vs UX, It's UI & UX</h4>
-                    <a href="#">Read More</a>
+            <li class="blog-post type-desktop">
+                <img class="blog-thumb" src="images/blog_UIUX_img.jpg">
+                <span class="blog-type"></span>
+                <div class="blog-title">
+                    <h4>Not UI vs UX, It's UI &amp; UX</h4>
                 </div>
+                <a href="#">Read More</a>
             </li>
             
-            <li>
-                <img src="images/blog_quicktips_img.jpg">
-                <div class="blog-posts">
-                    <a href="#" class="blog-icon"> <img src="images/blog_quicktip_icon.png"></a>
+            <li class="blog-post type-chart">
+                <img class="blog-thumb" src="images/blog_quicktips_img.jpg">
+                <span class="blog-type"></span>
+                <div class="blog-title">
                     <h4>5 Quick Tips to get approved from Google Adsense</h4>
-                    <a href="#">Read More</a>
                 </div>
+                <a href="#">Read More</a>
             </li>
             
         </ul>
         
         <div class="newsletter-signup">
             <p>Joing Our Newsletter for article Update</p>
-            <input type="email">
-            <img src="images/contactus_envelopeicon.png">
+            <form class="newsletter-form">
+                <input type="email">
+                <img src="images/contactus_envelopeicon.png">
+            </form>
         </div>
     </section>
     
@@ -219,30 +241,33 @@
         <h2>Contact</h2>
         <hr>
         <form action="">
+           
             <label for="name-input">Name</label>
             <input id="name-input" type="text">
+            
             <label for="email-input">E-mail</label>
             <input id="email-input" type="text">
             
-            <label for="text-area">Message</label>
-            <textarea name="message"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            
             <input type="submit">
         </form>
     </section>
     
 <!--footer section----------------------------------------->
 
-    <footer>
-        <div class="social-icons">
-            <img src="images/footer_socialicon_facebook.png" alt="">
+    <footer class="page-footer">
+        <div class="social-links">
+            <a href="http://www.facebook.com" target="_blank"><img src="images/footer_socialicon_facebook.png" alt="Facebook icon"></a>
             <img src="images/footer_socialmedia_twitter.png" alt="">
             <img src="images/footer_socialmedia_youtube.png" alt="">    
             <img src="images/footer_socialmedia_dribbble.png" alt="">
             <img src="images/footer_socialmedia_behance.png" alt="">
-            <img src="images/footer_socialmedia_something.png" alt="">
+            <img src="images/footer_socialmedia_something.png" alt="Deviant Art icon">
             <img src="images/footer_socialmedia_instagram.png" alt="">
             <img src="images/footer_socialmedia_linkedin.png" alt="">
-            <p>&copy; Copyright 2014. All rights reserved.</p>
+            <p class="copyright">&copy; Copyright 2014. All rights reserved.</p>
         </div>
     </footer>
 </body>

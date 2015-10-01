@@ -2,6 +2,7 @@ body {
     width: 360px;
     background-color: #f7f7f7;
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 section{
@@ -75,19 +76,18 @@ greeting section
 .greeting > div {
     position:absolute;
     top: 50%;
-    transform:translateY(-100%);
+transform:translateY(-50%);
     width: 100%;
 }
 
 .greeting h1 {
-    font-family: 'Source Sans Pro';
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .greeting span {
-    font-family: DroidSerif;
+    font-family: 'Droid Serif', serif;
     font-size: 13px;
     font-style: italic;
     text-align: center;
@@ -96,7 +96,7 @@ greeting section
 
 #scrollarrow-vertical {
     display: block;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 /*//////////////////////////////////
@@ -113,7 +113,6 @@ who we are section
 }
 
 .who-we-are h2 {    
-    font-family: 'Source Sans Pro';
     font-size: 18px;
     color: #454545;
     font-weight: 400;
@@ -125,7 +124,6 @@ who we are section
     
 .who-we-are p {
     color: #454545;
-    font-family: 'Source Sans Pro';
     font-size: 13px;
     width: 298px;
 }
@@ -167,7 +165,6 @@ services section
 
 .services h2 {
     color:#454545;
-    font-family: 'Source Sans Pro';
     font-weight: 400;
     font-size: 18px;
     text-align: center;
@@ -186,7 +183,6 @@ services section
 .divider {
     display:block;
     margin: 12px auto;
-    margin-bottom: 30px;
     
 }
 .services em {
@@ -202,19 +198,24 @@ services section
     display: inline-block;
     vertical-align: top;
     width: 50px;
+    margin-top: 15px;
 }
 
 .service-info {
     min-height: 80px;
     display: inline-block;
+    margin-top: 15px;
+}
+
+.service-info p {
+    margin-top: 7px;
 }
 
 .service-info h3 {
-    font-family: 'Source Sans Pro';
     font-size:14px;
     color:#acd373;
     font-weight: 600;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .service-info p {
@@ -239,16 +240,14 @@ team section
 
 .team {
     background-color: #acd373;
-    height: 485px;
 }
 
 .team h2 {
     color:#f7f7f7;
-    font-family: 'Source Sans Pro';
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 6px;
+    margin: 6px;
 }
 
 .team .quote {
@@ -257,19 +256,19 @@ team section
 
 .team-member {
     width:200px;
-    height: 182px;
     background-color: #f7f7f7;
-    margin-top: 45px;
+    margin-top: 70px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
 }
 
 .team-member h3 {
-    font-family: 'Source Sans Pro';
     font-size:14px;
     color:#acd373;
     font-weight: 600;
+    margin-top: 32px;
     margin-bottom: 8px;
     text-align: center;
 }
@@ -283,44 +282,134 @@ team section
 }
 
 .team-member .social-links {
+    padding: 15px;
+    text-align: center;
     background-color: #ebebeb;
     width:200px;
-    height: 52px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    display: block;
-    line-height: 52px;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin-bottom: 60px;
 }
 
 .round-pic {
     border-radius: 50%;
+    border: 5px solid #acd373;
+    position: absolute;
+    top:  -28px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .team-footer {
     background-color: #9abd67;
     height: 66px;
     position: relative;
-    padding: 0px;
+    margin: 0 -30px -30px;
+}
+
+.team-footer p {
+    color:#f7f7f7;
+    font-weight: 100;
+    font-size: 13px;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-right: 40px;
+}
+
+.team-footer .learn-more-link {
+    color: #f7f7f7;
+    border-color:#f7f7f7;
+    weight: 100;
+    width: 100px;
+    padding: 10px;
+}
+
+/*team aelector*/
+
+.team-selector {
+    position: relative;
+}
+
+.team-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.left-arrow {
+    left: 0px;
+
+}
+
+.right-arrow {
+    right: 0px;
 }
 
 
 /*//////////////////////////////////
 
-testimonials section
+works section
 
 //////////////////////////////////*/
+
+.works-header h2 {
+    text-align: center;
+}
+
+.works-header em {
+    font-style: normal;
+    color:#acd373;    
+}
 
 .work-sample {
     margin-top: 52px;
     background-color: #ebebeb;
+    height: 243px
 }
 
 .work-sample h3 {
-    font-family: 'Source Sans Pro';
     color: #454545;
-    
+    weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.work-sample span {
+    font: italic 12px DroidSerif;
+    color:#787878;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.works .learn-more-link {
+    width: 100px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.works-footer {
+    background-color: #ebebeb;
+    height: 80px;
+    position: relative;
+    margin: 0 -30px -30px;
+    padding: 30px;
+}
+
+#envato-logo {
+    left: 0px;
+}
+
+#themeforest-logo {
+    right: 0px;
 }
 
 
@@ -345,7 +434,6 @@ testimonials section
 }
 
 .testimonials p {
-    font-family: 'Source Sans Pro';
     font-size: 13px;
     font-weight: 100;
 }
@@ -378,7 +466,6 @@ testimonials section
 }
 
 .company-details h3 {
-    font-family: 'Source Sans Pro';
     font-size:14px;
     color:#acd373;
     font-weight: 600;
@@ -389,3 +476,87 @@ testimonials section
     font: italic 12px DroidSerif;
     color:rgba(247, 247, 247, 0.85);
 }
+
+/*//////////////////////////////////
+
+blog section
+
+//////////////////////////////////*/
+
+
+.blog {
+    padding: 30px 0px;
+}
+
+.blog ul {
+    padding: 0;
+}
+
+.blog h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog .divider {
+    margin-bottom: 36px;
+}
+
+.blog-post {
+    width: 160px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 10px 12px;
+    position: relative;
+}
+
+.blog-type{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #acd373;
+    border: 5px solid #ebebeb;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 60px;
+    
+}
+
+.blog-title {
+    
+}
+
+.blog-post h4 {
+    font-size: 11px;
+    color: #454545;
+    weight: 100;
+    text-align: center;
+    background-color:#ebebeb;
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.type-mobile .blog-type {
+   background-image: url(images/blog_app_mobileicon.png)   
+}
+
+.type-desktop .blog-type {
+   background-image: url(images/blog_UXUI_icon.png)   
+}
+
+.type-chart .blog-type {
+   background-image: url(images/blog_quicktip_icon.png)   
+}
+
+.type-globe .blog-type {
+   background-image: url(images/blog_webdesign_globeicon.png)   
+}
+
+
