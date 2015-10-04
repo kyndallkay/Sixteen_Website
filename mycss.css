@@ -393,7 +393,9 @@ works section
 .work-sample {
     margin-top: 52px;
     background-color: #ebebeb;
-    height: 243px
+    height: 243px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .work-sample h3 {
@@ -464,7 +466,12 @@ testimonials section
 
 .quote-box {
     border: 1px solid;
-    margin-top: 30px
+    margin-top: 30px;
+    background: url(images/testimonials_quotationmarks.png) no-repeat;
+    padding: 5px 5px 8px;
+    background-position: 254px 60px;
+    margin: 0;
+    position: relative;
 }
 
 .quote-box p {
@@ -472,22 +479,22 @@ testimonials section
     margin-right: 10px;
 }
 
-.quote-box {
-    background: url(images/testimonials_quotationmarks.png) no-repeat;
-    padding: 5px 5px 8px;
-    background-position: 254px 60px;
+#quote-triangle {
+    position: absolute;
+    left: -1px;
+    bottom: -21px;
 }
 
-.quote-box {
-    margin: 0;
-}
-
-.testimonial-company img, .company-details {       display: inline-block;
+.testimonial-company > img, .company-details {       display: inline-block;
     vertical-align: middle;
 
 }
 .testimonial-company img {
     border-radius: 50%;
+}
+
+.testimonial-company {
+    margin-top: 30px;
 }
 
 .company-details {
@@ -499,7 +506,7 @@ testimonials section
     font-size:14px;
     color:#acd373;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
 }
 
 .company-details a {
@@ -756,9 +763,15 @@ contact form section
     .greeting {
     height: 575px;
     background-size: auto 216px;
-
     }
 
+    .who-we-are p {
+    width: 500px;
+    }
+    
+    .iphone {
+    float: right;
+    }
 }
 
 @media screen and (min-width : 1000px){
@@ -774,7 +787,7 @@ contact form section
     nav {
     width: auto;
     height: 100%;
-        background: transparent;
+    background: transparent;
     }
     
     .logo {
@@ -811,16 +824,25 @@ contact form section
     font-size: 1.667em;
     }
     
+    .who-we-are {
+    padding: 50px 100px
+    }
     .who-we-are p {
     width: 770px;
     }
+    
     .iphone {
     float: right;
     }
     
+    .video {
+    background: url(images/video-placeholder-large.jpg) no-repeat;
+    height: 550px;
+    }
+    
     .map {
     background-image: url(images/map_large.jpg);
-        height: 500px;
+    height: 500px;
     }
 }
 
